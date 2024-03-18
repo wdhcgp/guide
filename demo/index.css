@@ -1,0 +1,23 @@
+.round1,.rect,.rect2{
+    width:200px;
+    height:200px;
+    color:red;
+    background: rgba(116, 66, 16, 0.312);
+    line-height: 200px;
+    text-align: center;
+}
+.round1{
+    border-radius:50%;
+}
+.rect{
+  position: relative;
+  left:350px;
+}
+.rect2{
+    width:200px;
+    height:600px;
+    border-radius: 50%;
+    position:absolute;
+    top:100px;
+    right:300px;
+}

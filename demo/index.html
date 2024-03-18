@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="../dist/guide.min.js"></script>
+    <title>guide</title>
+</head>
+<body>
+    <div style="padding:10% 20%">
+    <div class="round1">第一步</div>
+    <div class="rect">完成</div>
+    <div class="rect2">rect2</div>
+    </div>
+</body>
+</html>
+<script>
+    window.onload=()=>{
+        let round1=document.getElementsByClassName('round1')[0]
+        let rect=document.getElementsByClassName('rect')[0]
+        let rect2=document.getElementsByClassName('rect2')[0]
+        let stepsArr=[
+      {
+        el: round1,
+        shape:'round',
+        text: {
+          fontSize: 16,
+          message: "内容内容提示提示提示提示提示提示提示,内容内容提示提示提示提示提示提示提示,内容内容提示提示提示提示提示提示提示,内容内容提示提示提示提示提示提示提示,",
+          position: [810, 200],
+          maxWidth: 200,
+        }
+      },
+      {
+        el: round1,
+        text: {
+          fontSize:25,
+          lineHeight:30,
+          color:'#fff',
+          message: "内容内容提示提示提示提示提示提示提示,内容内容提示提示提示提示提示提示提示,内容内容提示提示提示提示提示提示提示,内容内容提示提示提示提示提示提示提示,",
+          position: [810, 200],
+          maxWidth: 200,
+        },
+        button: {
+          fontSize: 26,
+          color:'black',
+          message: "第一步",
+          width: 200,
+          height: 70,
+        },
+      },
+      {
+        el: rect,
+        text: {
+          fontSize: 16,
+          color:'red',
+          message: "内容内容提示",
+          position: [1000, 799],
+          maxWidth: 200,
+        },
+        button: {
+          message: "完成",
+          position:[1000, 900]
+        },
+      },
+      {
+        el: rect2,
+        shape:'round',
+        text: {
+          fontSize: 16,
+          color:'red',
+          message: "内容内容提示提示提示提示提示提示提示,内容内容提示提示提示提示提示提示提示,",
+          position: [810, 200],
+          maxWidth: 200,
+        },
+        button: {
+          fontSize: 16,
+          color:'red',
+          message: "下一步",
+          width: 100,
+          height: 70,
+        },
+      },
+      {
+        el: rect2,
+        text: {
+          fontSize: 16,
+          color:'red',
+          message: "内容内容提示提示提示提示提示提示提示,内容内容提示提示提示提示提示提示提示,",
+          position: [810, 200],
+          maxWidth: 200,
+        },
+        button: {
+          fontSize: 16,
+          color:'red',
+          message: "下一步",
+          width: 100,
+          height: 70,
+        },
+      },
+    ]
+    guideCanvas(stepsArr)
+    }
+</script>
