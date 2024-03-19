@@ -3,7 +3,7 @@ module.exports = {
     mode:'production',
     entry: './src/index.js',
     output: {
-      filename: 'guide.min.js',
+      filename: 'guideCanvas.min.js',
       path:resolve(__dirname, 'dist'),
       library: {
         name: 'guideCanvas',

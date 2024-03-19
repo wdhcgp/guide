@@ -1,12 +1,12 @@
 # guide
 
-#### 介绍
+## 介绍
 web guide,网页指引、提示。页面无滚动条时使用最佳。
 
-#### 效果图
-![image](./demo/demo.gif)
+## 效果图
+![image](https://github.com/wdhcgp/guide-canvas/blob/main/demo/demo.gif)
 
-#### Vue使用
+## Vue中使用
 1 下载依赖：
 ```bash
 npm i guide-canvas -S
@@ -73,10 +73,10 @@ npm i guide-canvas -S
     guideCanvas(stepArr);
   }
 ```
-## CDN 方式使用
+## html中使用
 
 ```html
-<script src="/dist/guide.min.js"></script>
+<script src="https://github.com/wdhcgp/guide-canvas/blob/main/dist/guideCanvas.min.js"></script>
 <script>
     window.onload=()=>{
         let round1=document.getElementsByClassName('round1')[0]
