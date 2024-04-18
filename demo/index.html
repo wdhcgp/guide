@@ -35,19 +35,19 @@
       {
         el: round1,
         text: {
-          fontSize:25,
-          lineHeight:30,
+          fontSize:25.12,
+          lineHeight:30.45,
           color:'#fff',
-          message: "内容内容提示提示提示提示提示提示提示,内容内容提示提示提示提示提示提示提示,内容内容提示提示提示提示提示提示提示,内容内容提示提示提示提示提示提示提示,",
-          position: [810, 200],
-          maxWidth: 200,
+          message: "我的数据都是非整数数字数字数字我的数据都是非整数数字数字数字",
+          position: [810.12, 200.33],
+          maxWidth: 200.68,
         },
         button: {
-          fontSize: 26,
+          fontSize: 26.458,
           color:'black',
           message: "第一步",
-          width: 200,
-          height: 70,
+          width: 200.75,
+          height: 70.3621,
         },
       },
       {
@@ -100,6 +100,8 @@
         },
       },
     ]
-    guideCanvas(stepsArr)
+    guideCanvas(stepsArr,()=>{
+      console.log('指引结束后的回调')
+    })
     }
 </script>
