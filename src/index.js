@@ -1,13 +1,16 @@
 import createCanvas from './canvas.js'
 import {getButtonL} from './guide.js'
 let allCount=null
-let canvasId='canvasGuide'
+let canvasId=null
 let reversedArray=null
-function guideCanvas(arr){
+let endFun=null
+function guideCanvas(arr,callback){
     if(arr.length==0){
         return
     }
+    canvasId=`guideCanvas${new Date().getTime()}`
     allCount=arr.length
+    endFun=(typeof callback)==='function'? callback : null
     reversedArray = arr.slice().reverse()
     createCanvas(reversedArray[allCount-1],canvasId)
     document.addEventListener('click',dClick)
@@ -26,6 +29,8 @@ function dClick(e){
                 if(document.getElementById(canvasId)){
                     document.getElementById(canvasId).remove()
                 }
+                canvasId=null
+                endFun && endFun()
             }
     }
 }
