@@ -1,6 +1,6 @@
 {
   "name": "guide-canvas",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "web guide,网页指引、提示",
   "main": "src/index.js",
   "scripts": {
